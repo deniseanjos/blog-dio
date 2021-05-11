@@ -1,4 +1,4 @@
-<div class="jumbotron jumbotron-fluid " id="contact">
+<div class="container-fluid" id="contact">
 
     <div class="container">
         <h1>Entre em contato</h1>
@@ -9,24 +9,28 @@
             <div class="formulario col-sm">
                 <form class="needs-validation" novalidate>
                     <div class="form-group">
-                        <label for="nome">Nome Completo:</label>
-                        <input type="text" class="form-control" id="campoNome" placeholder="Informe seu nome completo"
-                            required>
+                        <label for="nome">Nome:</label>
+                        <input (keyup)="validaNome($event)" type="text" class="form-control" id="campoNome"
+                            placeholder="Informe seu nome completo" required>
                         <div class="valid-feedback">Nome preenchido.</div>
+                        <div class="invalid-feedback">Necessário preencher no mínimo 3 caracteres.</div>
                     </div>
                     <div class="form-group">
                         <label for="email">Endereço de email:</label>
-                        <input type="email" class="form-control" id="campoEmail" placeholder="nome@exemplo.com"
-                            required>
+                        <input (keyup)="validaEmail($event)" type="email" class="form-control" id="campoEmail"
+                            placeholder="nome@exemplo.com" required>
+                        <div class="valid-feedback">E-mail preenchido corretamente.</div>
                         <div class="invalid-feedback">Por gentileza, verifique o e-mail informado.</div>
                     </div>
                     <div class="form-group">
                         <label for="mensagem">Deixe sua mensagem aqui:</label>
-                        <textarea class="form-control" placeholder="Digite aqui sua mensagem"
-                            id="floatingTextarea"></textarea>
+                        <textarea (keyup)="validaMensagem($event)" class="form-control"
+                            placeholder="Digite aqui sua mensagem" id="floatingTextarea"></textarea>
+                        <div class="valid-feedback">Mensagem valida.</div>
+                        <div class="invalid-feedback">A mensagem deve conter, no mínimo, 10 caracteres.</div>
                     </div>
                     <div class="form-group d-flex justify-content-center">
-                        <button type="submit" class="btn btn-outline-primary">Enviar</button>
+                        <button type="submit" class="btn btn-outline-primary" (click)="enviarMensagem()">Enviar</button>
                     </div>
                 </form>
             </div>
