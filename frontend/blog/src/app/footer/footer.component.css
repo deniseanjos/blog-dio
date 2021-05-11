@@ -1,0 +1,39 @@
+footer {
+    background-color: #6B4B69;
+    padding: 1%;
+}
+
+.social-network {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.social-network li {
+    display: inline;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 35px;
+}
+
+.social-network fa-icon {
+    color: white;
+}
+
+.social-network fa-icon:hover {
+    color: #c5b4c4;
+}
+
+.text-center {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 15px;
+}
+
+hr {
+ color: #F6565E;   
+}

@@ -1,0 +1,18 @@
+.container-fluid {
+    background-color: #4B596B;
+}
+
+.collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collapse ul li a {
+    color: white;
+}
+
+.collapse ul li a:hover {
+    opacity: 70%;
+}
+

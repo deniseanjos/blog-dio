@@ -1,0 +1,17 @@
+#contact {
+    margin-bottom: 3%;
+}
+
+h1 {
+    padding: 3%;
+    text-align: center;
+}
+
+label, input, textarea {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+button {
+    margin-top: 5px;
+}
